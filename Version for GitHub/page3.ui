@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>499</width>
+    <height>872</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab2_Bobing</string>
+  </property>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>871</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/3.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="single_Button">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>630</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>single player</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="multi_Button">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>710</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>multi-player</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="picture.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>single_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>page3_4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>263</x>
+     <y>557</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>553</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>multi_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>page3_4_1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>629</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>629</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>page3_4()</slot>
+  <slot>page3_4_1()</slot>
+ </slots>
+</ui>
